@@ -16,3 +16,6 @@ Add a screenshot here :
 ## Tech stack
 - Plain HTML, CSS and JavaScript
 - Persistent data via `localStorage`
+
+## Credits
+Apurva Anand, Himanshu Rai , Amanjot Kaur, Ramanpreet Kaur.
