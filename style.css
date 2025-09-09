@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.new-user{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-user > .img1{
+    position: absolute;
+    transform: scale(0.8);
+}
+
+.new-user > .img2{
+    position: absolute;
+    transform: scale(0.7);
+    top: 6.94em;
+    right: -2em;
+}
+
+.new-user > h1{
+    position: absolute;
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10em;
+    text-align: center;
+}
+
+.new-user > .addBtnNewUsr{
+    /* z-index: 1000; */
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+    height: 45px;
+    width: 125px;
+    background-color: #a1b6c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    font-family: sans-serif;
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+.slab{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    background-color: #000;
+    opacity: 0.75;
+    display: none;
+}
+
+.inputForm{
+    height: 90vh;
+    width: 60vw;
+    background-color: #b6d2e2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 32px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputForm > .title{
+    width: 80%;
+    height: 10%;
+    border-radius: 35px;
+    outline: none;
+    border: none;
+    padding-left: 1.7em;
+    font-size: 1.5em;
+    font-weight: bolder;
+    background-color: #ececec;
+    color: #000;
+    font-family: sans-serif;
+    margin-bottom: 2em;
+}
+
+.inputForm > .title::placeholder{
+    opacity: 0.7;
+}
+
+.inputForm > .noteSection{
+    width: 80%;
+    height: 50%;
+    border-radius: 35px;
+    outline: none;
+    border: none;
+    padding-left: 1.7em;
+    padding-top: 1.6em;
+    font-size: 1.3em;
+    font-weight: bolder;
+    background-color: #ececec;
+    color: #000;
+    font-family: sans-serif;
+    margin-bottom: 2em;
+}
+
+.inputForm > .noteSection::placeholder{
+    opacity: 0.7;
+}
+
+.inputForm > .saveBtn{
+    height: 7%;
+    width: 20%;
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    box-shadow: 1px 1px 1px #000;
+    font-family: sans-serif;
+    color: #000;
+    cursor: pointer;
+}
+
+.data{
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    background-color: #a1b6c3;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow: auto;
+}
+
+.data > .displayBox{
+    height: 40%;
+    width: 20%;
+    background-color: #ececec;
+    margin: 50px;
+    border: 3px solid #000;
+}
+
+.data > .displayBox > .titleBar{
+    height: 19.5%;
+    width: 100%;
+    background-color: #a8bfe7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #000;
+}
+
+.data > .displayBox > .titleBar > h3{
+    margin-left: 30px;
+    font-family: sans-serif;
+    font-size: 1.4em;
+    opacity: 0.6;
+}
+
+.data > .displayBox > .noteView{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.data > .displayBox > .noteView > h3{
+    margin-left: 30px;
+    margin-top: 30px;
+    font-family: sans-serif;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.data > .displayBox > .footerSection{
+    height: 20%;
+    width: 100%;
+    border-top: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.data > .displayBox > .footerSection > .removeBtn{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.data > .displayBox > .footerSection > .line{
+    height: 97%;
+    width: 3px;
+    background-color: #000;
+    margin-bottom: 3px;
+}
+
+.data > .displayBox > .footerSection > .editBtn{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.data > .newBtnExsUsr{
+    height: 40%;
+    width: 12%;
+    border: 3.5px dashed #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.data > .newBtnExsUsr > .addNewBtn{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 2em;
+    cursor: pointer;
+}
