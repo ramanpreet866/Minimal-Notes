@@ -4,7 +4,7 @@ A small, client-side note-taking web app with Add / Edit / Remove features. Note
 ## Demo
 Add a screenshot here :
 
-![App screenshot](./assets/screenshot.png)
+![App screenshot](./screenshot.png)
 
 ## Salient Features
 - Add new notes (title + content)
