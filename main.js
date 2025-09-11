@@ -12,7 +12,7 @@ let newUsrPage = document.querySelector(".new-user");
 let editingIndex = -1; 
 
 window.addEventListener("load", () => {
-  if (localStorage.getItem("usrData").length >= 1) {
+  if (localStorage.getItem("usrData")) {
     getUsrData = JSON.parse(localStorage.getItem("usrData"));
     newUsrPage.style.display = "none";
     data.style.display = "flex";
@@ -138,4 +138,5 @@ saveBtn.addEventListener("click", () => {
   }
 
 });
+
 
